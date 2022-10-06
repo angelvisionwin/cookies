@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" itemscope itemtype="http://schema.org/WebPage"
+    xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<body>
+  <!-- CookieConsent must be loaded before user related scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@klaxit/cookie-consent@0.3.4/dist/cookie-consent.js"></script>
+  <script src="default.js"></script>
+
+  <script>
+
+    const cc = new CookieConsent( cookieoptions );
+
+    // Events
+    cc.on("accept", (cc) => console.log("Aceptadas"))
+    cc.on("reject", (cc) => console.log("Rechazadas"))
+    cc.on("change", (cc) => console.log("Hay cambios"))
+
+    function alertCookie() {
+
+      var mensaje = '';
+
+      if (window.CookieConsent.acceptedCategories?.includes("analytics")) {
+
+        mensaje += 'Analiticas -';
+
+      }
+
+      if (window.CookieConsent.acceptedCategories?.includes("essentials")) {
+
+        mensaje += 'Esenciales -';
+
+      }
+
+      alert(mensaje);
+
+    }
+
+  </script>
+
+  <button onclick="alertCookie()">Mostrar cookies</button>
+
+
+</body>
+
+</html>
