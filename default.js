@@ -1,7 +1,7 @@
 "use strict"
 
 var cookieoptions = {
-    title: 'Usamos cookies en Visionwin 🍪',
+    title: 'Usamos cookies en este sitio 🍪',
     description: `Haz clic en "Aceptar" para permitirnos usar cookies para personalizar
                   este sitio. Personaliza tus preferencias en tu Configuración de cookies 
                   o haz clic en "Rechazar" si no deseas que podamos usar cookies para este fin. 
